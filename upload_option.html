@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NOVATION</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+    body{
+      margin:0;
+    }
+    h1{
+      margin:0;
+      border-bottom: 2px solid rgb(142, 68, 173);
+      background-color: rgb(142, 68, 173);
+    }
+    h1 a{
+      text-decoration: none;
+      color: white;
+    }
+    h3{
+      font-size: 25px;
+      margin:0;
+      padding: 10px;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    .icon-bar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+
+    .icon-bar a {
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 32px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+
+    .active {
+      background-color: rgb(142, 68, 173);
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="">NOVATION</a></h1>
+  <h3>고급 설정</h3>
+  표시 사진 직접 설정하기<br>
+  팀 공동 작업<br>
+  공동 소유자 추가하기<br>
+  댓글 비활성화
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label><br>
+  <div class="icon-bar">
+    <a class="active" href=""><i class="fa fa-home"></i></a>
+    <a class="active" href=""><i class="fa fa-search"></i></a>
+    <a class="active" href=""><i class="fa fa-upload"></i></a>
+    <a class="active" href=""><i class='fas fa-user'></i></a>
+    <a class="active" href=""><i class='fas fa-user-friends'></i></a>
+  </div>
+</body>
+</html>
